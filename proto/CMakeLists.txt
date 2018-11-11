@@ -15,7 +15,7 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
 PROJECT(sawtooth CXX)
 
-FIND_PACKAGE(Protobuf REQUIRED)
+FIND_PACKAGE(Protobuf 3.5.1 REQUIRED)
 
 FILE(GLOB protos "../protos/*.proto" )
 SOURCE_GROUP("Proto" FILES ${src})

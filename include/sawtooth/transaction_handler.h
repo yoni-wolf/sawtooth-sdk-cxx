@@ -114,6 +114,11 @@ public:
         return dummy;
      };
 
+    virtual const ::std::string GetSerializedHeader() {
+        std::string ret;
+        header_->SerializeToString(&ret);
+        return ret;
+
 private:
     ::TransactionHeader* header_; // pointer to protobuf generated object
     ::std::string dummy;

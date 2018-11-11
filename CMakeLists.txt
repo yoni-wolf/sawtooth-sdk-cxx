@@ -79,7 +79,7 @@ SET(CPACK_DEBIAN_PACKAGE_HOMEPAGE https://sawtooth.hyperledger.org)
 # uncomment line below if a custom preinst(all) script is needed
 #SET(CPACK_DEBIAN_PACKAGE_CONTROL_EXTRA "${CMAKE_CURRENT_SOURCE_DIR}/preinst")
 
-SET(CPACK_DEBIAN_PACKAGE_DEPENDS libcrypto++-dev,liblog4cxx-dev,libzmqpp-dev,libtool,libssl-dev,protobuf)
+SET(CPACK_DEBIAN_PACKAGE_DEPENDS libcrypto++-dev,liblog4cxx-dev,libzmqpp-dev,libtool,libssl-dev)
 
 #This one must be the last
 INCLUDE(CPack)

@@ -46,6 +46,7 @@ public:
 
     virtual int GetCount(TransactionHeaderField field) = 0;
     virtual const ::std::string& GetValue(TransactionHeaderField field, int index = 0) = 0;
+    virtual const ::std::string GetSerializedHeader() = 0;
 };
 
 typedef std::unique_ptr<TransactionHeader> TransactionHeaderUPtr;
