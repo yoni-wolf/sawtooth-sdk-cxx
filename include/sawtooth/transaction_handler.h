@@ -118,6 +118,7 @@ public:
         std::string ret;
         header_->SerializeToString(&ret);
         return ret;
+    }
 
 private:
     ::TransactionHeader* header_; // pointer to protobuf generated object
